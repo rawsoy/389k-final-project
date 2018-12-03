@@ -9,7 +9,7 @@ Date: Nov 24, 2018
 
 Project Topic: Phones
 
-URL: 
+URL: https://rawson389k.herokuapp.com/ 
 
 ---
 
@@ -86,7 +86,7 @@ var request = require("request");
 
 var options = { 
     method: 'POST',
-    url: 'http:/api/addPhone',
+    url: 'https://rawson389k.herokuapp.com//api/addPhone',
     headers: { 
         'content-type': 'application/x-www-form-urlencoded' 
     },
@@ -117,7 +117,7 @@ Search Field: `name` or `year` or `company`
 ### 5. Navigation Pages
 
 Navigation Filters
-1. Comapnies -> `/companies` -> All companies in the database
+1. Companies -> `/companies` -> All companies in the database
 2. This Year's Phones -> `/phones/thisyear` -> Phones from the current year
 3. Popular -> `/phones/popular` -> Phones with an average review of 4 or greater
 4. Pick My Next Phone -> `/phones/pick` -> Picks a random phone
