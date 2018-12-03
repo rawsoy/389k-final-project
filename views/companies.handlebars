@@ -1,0 +1,8 @@
+<h1>Companies</h1>
+{{#if companies}}
+    {{#each companies}}
+        <a href="/companies/{{this}}" class="company">{{{this}}}</a>
+    {{/each}}
+{{else}}
+    <p>No companies found</p>
+{{/if}}

@@ -1,0 +1,26 @@
+
+<div id="searchBox">
+    <input type="text" id="search" placeholder="Search">
+</div>
+
+<h1>Phones</h1>
+{{#if phones}}
+    {{#each phones}}
+    <a href="/phones/{{{name}}}" class="phoneLink">
+        <div class="phone">
+            <img src="{{{image}}}">
+            <div class="details">
+                <h2 class="name">{{{name}}} - {{{year}}}</h2>
+                <h3 class="manufacturer">{{{company}}}</h3>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+    <p id="searchFail">No matches found</p>
+    <br>
+    <br>
+    <a href="/addPhone" class="addBox">Add a Phone</a>
+{{else}}
+    <p>No phones found</p>
+{{/if}}
+

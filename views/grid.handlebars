@@ -1,0 +1,33 @@
+{{#if thisyear}}
+    <h1>This Year's Phones</h1>
+{{/if}}
+
+{{#if popular}}
+    <h1>Popular</h1>
+{{/if}}
+
+{{#if comp}}
+    <h1>{{manufacturer}}</h1>
+{{/if}}
+
+{{#if pick}}
+    <h1>Here's Your Next Phone!</h1>
+{{/if}}
+
+{{#if phablets}}
+    <h1>Phablets</h1>
+{{/if}}
+
+{{#if phones}}
+    {{#each phones}}
+        <a href="/phones/{{{name}}}" class="phoneLink">
+            <div class="phone">
+                <img src="{{{image}}}">
+                <div class="details">
+                    <h2 class="name">{{{name}}} - {{{year}}}</h2>
+                    <h3 class="manufacturer">{{{company}}}</h3>
+                </div>
+            </div>
+        </a>
+    {{/each}}
+{{/if}}

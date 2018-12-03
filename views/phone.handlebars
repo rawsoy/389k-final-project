@@ -1,0 +1,17 @@
+<div class="details">
+    <img src="{{{image}}}" id="propic">
+    <div class="info">
+        <h2 id="name">{{{name}}}</h2>
+        <h2 id="year">{{{year}}}</h2>
+        <a href="/companies/{{company}}" id="manufacturer">{{{company}}}</a>
+    </div>
+</div>
+    <a href="/phones/{{{name}}}/addreview" class="addBox">Add a Review</a>
+    {{#each reviews}}
+        <div class="reviewBox">
+            <div class="details">
+                <h4>{{{author}}} - {{{rating}}}</h4>
+                <p id="comment">{{{comment}}}</p>
+            </div>
+        </div>
+    {{/each}}
